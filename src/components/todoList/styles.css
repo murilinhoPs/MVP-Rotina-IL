@@ -1,3 +1,4 @@
+
 .list {
   color: rgb(58, 58, 58);
   width: 250px;
@@ -15,18 +16,21 @@
   justify-content: center;
 }
 .list p input {
-  background-color: transparent;
-  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
   color: #000;
   font-size: 18px;
-  width: 200px;
+  width: 180px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: underline;
 }
 .list p input:focus {
   outline: none;
 }
 .list p span {
   position: relative;
-  left: 0px;
+  left: -40px;
   bottom: 0px;
 }
 
@@ -57,8 +61,8 @@
 
   .list p span {
     position: relative;
-    left: 15px;
-    bottom: 0px;
+    left: -20px;
+    bottom: -5px;
   }
 
   .list p input {
@@ -79,4 +83,57 @@
 .itemsAnim-leave .itemsAnim-leave-active {
   opacity: 0.01;
   transition: opacity 300ms ease-in;
+}
+
+
+
+
+@media print {
+  .list {
+    color: rgb(58, 58, 58);
+    width: 250px;
+    margin: 20px auto;
+    height: auto;
+    background-color: rgb(192, 177, 137);
+    border-radius: 5px;
+  }
+  .list p {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    transition: ease-in-out;
+    justify-content: center;
+  }
+  .list p input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #000;
+    font-size: 18px;
+    width: 180px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: underline;
+  }
+  .list p input:focus {
+    outline: none;
+  }
+  .list p span {
+    position: relative;
+    left: -40px;
+    bottom: 0px;
+  }
+  
+  .MyDisplay {
+   display: flex;
+    justify-content: space-around;
+     margin-bottom: 10px;
+    align-self: center; 
+  }
+  
+  .faicons {
+    margin: 0 5px;
+    font-size: 15px;
+    cursor: pointer;
+  }
 }

@@ -17,7 +17,8 @@ function ListItems(props) {
       <div className="list" key={item.key}>
         <p>
           <div className="MyDisplay">
-          <FaFileUpload className="Icon2" size="20px"/>
+
+          <AvatarPlaceholder iconSize="30px" />
 
             <input
               type="text"
