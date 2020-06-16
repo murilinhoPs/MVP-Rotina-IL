@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
-import PersonsContainer from "../../components/personContainer/index";
 // import { faWindowRestore } from "@fortawesome/free-solid-svg-icons";
 import { TodoDaily } from "../todoDaily/";
 
@@ -9,7 +8,7 @@ const WeeklyTodo = () => {
 
   useEffect(() => {
     const verifyWidth = () => {
-      setIsMobile(window.outerWidth <= 760);
+      setIsMobile(window.outerWidth <= 768);
 
       console.log(isMobile);
     };
@@ -21,7 +20,6 @@ const WeeklyTodo = () => {
 
   return (
     <div className="container">
-      {!isMobile ? <PersonsContainer /> : null}
       <TodoDaily day="Segunda" isMobile={isMobile} />
       <TodoDaily day="Terça" isMobile={isMobile} />
       <TodoDaily day="Quarta" isMobile={isMobile} />

@@ -19,16 +19,16 @@ const TodoComponent = () => {
 
     const newItem = currentItem;
 
-    if (newItem.text !== "") {
-      const newItems = [...items, newItem];
+    // if (newItem.text !== "") {
+    const newItems = [...items, newItem];
 
-      setItems(newItems);
+    setItems(newItems);
 
-      setCurrentItem({
-        text: "",
-        key: "",
-      });
-    }
+    setCurrentItem({
+      text: "",
+      key: "",
+    });
+    // }
   }
 
   function handleInput(inputEvent) {
@@ -46,38 +46,38 @@ const TodoComponent = () => {
 
   function setUpdate(text, key) {
     console.log("items:" + items);
+    const newItems = items;
 
-    items.map((item) => {
+    newItems.map((item) => {
       if (item.key === key) {
         console.log(item.key + "    " + key);
 
         item.text = text;
+
+        console.log(item.text);
+
+        setItems(newItems);
       }
     });
-    setItems(items);
+
+    setItems(newItems);
   }
 
   return (
     <div className="TodoContainer">
-      {items.length !== 0 ? (
-        <ListItems
-          items={items}
-          deleteItem={deleteItem}
-          setUpdate={setUpdate}
-        />
-      ) : (
-        <header>
-          <form id="to-do-form" onSubmit={addItem}>
-            <input
-              type="text"
-              placeholder="Coloque a Tarefa"
-              value={currentItem.text}
-              onChange={handleInput}
-            ></input>
-            <button type="submit">+</button>
-          </form>
-        </header>
-      )}
+      <header>
+        <form id="to-do-form" onSubmit={addItem}>
+          <input
+            type="text"
+            placeholder="Tarefa"
+            value={currentItem.text}
+            onChange={handleInput}
+          ></input>
+          <button type="submit">+</button>
+        </form>
+      </header>
+
+      <ListItems items={items} deleteItem={deleteItem} setUpdate={setUpdate} />
     </div>
   );
 };

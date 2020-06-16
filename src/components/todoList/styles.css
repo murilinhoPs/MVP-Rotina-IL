@@ -1,45 +1,82 @@
-.list{
+.list {
+  color: rgb(58, 58, 58);
+  width: 250px;
+  margin: 20px auto;
+  height: auto;
+  background-color: rgb(192, 177, 137);
+  border-radius: 5px;
+}
+.list p {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  transition: ease-in-out;
+  justify-content: center;
+}
+.list p input {
+  background-color: transparent;
+  border: 0;
+  color: #000;
+  font-size: 18px;
+  width: 200px;
+}
+.list p input:focus {
+  outline: none;
+}
+.list p span {
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+}
+
+.MyDisplay {
+ display: flex;
+  justify-content: space-around;
+   margin-bottom: 10px;
+  align-self: center; 
+}
+
+.faicons {
+  margin: 0 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .list {
     color: rgb(58, 58, 58);
-    width: 250px;
-    margin: 20px auto;
-    height: 50px;
+    width: 300px;
+    height: auto;
     background-color: rgb(192, 177, 137);
     border-radius: 5px;
-}
-.list p{
-    padding: 10px;
+  }
+  .MyDisplay {
+    width: 20px;
+  }
+
+  .list p span {
     position: relative;
-    transition: ease-in-out;
+    left: 15px;
+    bottom: 0px;
+  }
+
+  .list p input {
+    width: 250px;
+  }
 }
-.list p input{
-    background-color: transparent;
-    border: 0;
-    color: #000;
-    font-size: 18px;
+
+.itemsAnim-enter {
+  opacity: 0.01;
 }
-.list p input:focus{
-    outline: none;
+.itemsAnim-enter .itemsAnim-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
 }
-.list p span{
-    position: absolute;
-    right: 10px;
+.itemsAnim-leave {
+  opacity: 1;
 }
-.faicons{
-    margin: 0 5px;
-    font-size: 15px;
-    cursor: pointer;
-}
-.itemsAnim-enter{
-    opacity: 0.01;
-}
-.itemsAnim-enter .itemsAnim-enter-active{
-    opacity: 1;
-    transition: opacity 300ms ease-in
-}
-.itemsAnim-leave{
-    opacity: 1;
-}
-.itemsAnim-leave .itemsAnim-leave-active{
-    opacity: 0.01;
-    transition: opacity 300ms ease-in
+.itemsAnim-leave .itemsAnim-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
