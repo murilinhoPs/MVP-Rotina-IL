@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import TodoComponent from "./pages/todoComponent";
 import WeeklyTodo from './pages/weeklyTodo/index';
 import * as serviceWorker from "./serviceWorker";
 

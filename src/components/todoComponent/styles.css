@@ -1,0 +1,48 @@
+#to-do-form {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-content: center;
+}
+
+#to-do-form input {
+  background-color: rgb(111, 126, 131);
+  border: 0;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  padding: 0px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+#to-do-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#to-do-form button {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 5px;
+  border: 0;
+  margin-left: 10px;
+  background-color: rgb(218, 195, 152);
+  /* background-color:rgb(192, 177, 137);  */
+  cursor: pointer;
+  font-size: 28px;
+  text-align: center;
+  align-self: center;
+}
+#to-do-form button:focus {
+  outline: none;
+}
+
+@media (max-width: 700px) {
+  #to-do-form input {
+    width: 100px;
+    height: 40px;
+  }
+  #to-do-form button{
+    height: 2rem;
+    width: 2rem;
+  }
+}

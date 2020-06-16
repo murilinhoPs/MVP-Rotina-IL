@@ -1,9 +1,9 @@
 .list{
-    color: #fff;
-    width: 300px;
+    color: rgb(58, 58, 58);
+    width: 250px;
     margin: 20px auto;
     height: 50px;
-    background-color: #bf07ac;
+    background-color: rgb(192, 177, 137);
     border-radius: 5px;
 }
 .list p{
@@ -14,7 +14,7 @@
 .list p input{
     background-color: transparent;
     border: 0;
-    color: #fff;
+    color: #000;
     font-size: 18px;
 }
 .list p input:focus{

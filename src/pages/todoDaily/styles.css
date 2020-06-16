@@ -1,0 +1,25 @@
+.DayName {
+  align-self: center;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .DayContainer {
+    background-color: rgb(54, 54, 54);
+    margin: 15px 50px;
+    padding: 10px;
+    padding-bottom: 20px;
+    border: 3px solid wheat;
+  }
+
+  .DayTable{
+    display: flex;
+  }
+
+  .DayTodo{
+    margin-top: 52px;
+  }
+}

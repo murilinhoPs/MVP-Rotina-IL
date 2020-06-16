@@ -25,9 +25,9 @@ const TodoComponent = () => {
       setItems(newItems);
 
       setCurrentItem({
-        text:"",
-        key:""
-      })
+        text: "",
+        key: "",
+      });
     }
   }
 
@@ -58,24 +58,26 @@ const TodoComponent = () => {
   }
 
   return (
-    <div className="App">
-      <header>
-        <form id="to-do-form" onSubmit={addItem}>
-          <input
-            type="text"
-            placeholder="Enter task"
-            value={currentItem.text}
-            onChange={handleInput}
-          ></input>
-          <button type="submit">Add</button>
-        </form>
-
+    <div className="TodoContainer">
+      {items.length !== 0 ? (
         <ListItems
           items={items}
           deleteItem={deleteItem}
           setUpdate={setUpdate}
         />
-      </header>
+      ) : (
+        <header>
+          <form id="to-do-form" onSubmit={addItem}>
+            <input
+              type="text"
+              placeholder="Coloque a Tarefa"
+              value={currentItem.text}
+              onChange={handleInput}
+            ></input>
+            <button type="submit">+</button>
+          </form>
+        </header>
+      )}
     </div>
   );
 };
