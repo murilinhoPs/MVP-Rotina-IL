@@ -32,7 +32,7 @@
   flex-direction: column;
   height: 50px;
   width: 50px;
-  margin-left: 15px;
+  margin-left: 30px;
   margin-top: 25px;
 }
 .AvatarImageContainer img {
@@ -62,5 +62,9 @@
     position: relative;
     left: 7px;
     top: 4.5px;
+  }
+
+  .AvatarImageContainer {
+    margin-left: 15px;
   }
 }
