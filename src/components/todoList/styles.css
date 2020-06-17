@@ -1,10 +1,20 @@
+@media print {
+  .list p textarea {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+  }
+}
+
 .list {
   color: rgb(58, 58, 58);
   width: 290px;
   margin: 20px auto;
   height: auto;
-  background-color: rgb(192, 177, 137);
+  background-color: rgb(223, 223, 223);
   border-radius: 5px;
+  border: 3px solid rgb(211, 99, 255);
 }
 .list p {
   padding: 10px;
@@ -47,14 +57,14 @@
   margin: 0 5px;
   font-size: 15px;
   cursor: pointer;
+  color: rgb(211, 99, 255);
 }
 
 @media (max-width: 768px) {
   .list {
-    color: rgb(58, 58, 58);
     width: 300px;
     height: auto;
-    background-color: rgb(192, 177, 137);
+    /* background-color: rgb(192, 177, 137); */
     border-radius: 5px;
   }
   .MyDisplay {

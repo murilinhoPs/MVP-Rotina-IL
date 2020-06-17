@@ -45,9 +45,10 @@
   position: relative;
   bottom: 55px;
   left: 32px;
+  color:rgb(211, 99, 255);
 }
 .AvatarRemoveIcon:hover{
-  color:white;
+  color:rgb(170, 78, 206);
   cursor: pointer;
 }
 
