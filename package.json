@@ -13,7 +13,6 @@
     "react-icons": "^3.10.0",
     "react-images-uploading": "^2.2.0",
     "react-scripts": "^3.4.1",
-    "react-to-print": "^2.9.0",
     "react-transition-group": "^4.1.0"
   },
   "scripts": {

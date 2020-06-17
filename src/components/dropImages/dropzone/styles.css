@@ -51,3 +51,9 @@
     margin-top: 15px;
   }
 }
+
+@media print{
+  .DropzoneImageContainer button {
+    display: none;
+  }
+}

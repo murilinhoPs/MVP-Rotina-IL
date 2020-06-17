@@ -1,24 +1,15 @@
-import React, { useRef } from "react";
-import { useReactToPrint } from "react-to-print";
+import React from "react";
 
 import "./styles.css";
 import WeeklyTodo from "../weeklyTodo";
 const App = () => {
-  const printableRef = useRef();
-
-  const handlePrint = useReactToPrint({
-    content: () => printableRef.current,
-    
-  });
 
   return (
     <>
-      <button className="PrintButton" onClick={handlePrint}>
+      <button className="PrintButton" onClick={() => window.print()}>
         Imprimir
       </button>
-      <div ref={printableRef}>
         <WeeklyTodo />
-      </div>
     </>
   );
 };
