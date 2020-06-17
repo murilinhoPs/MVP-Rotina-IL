@@ -19,16 +19,16 @@ const TodoComponent = () => {
 
     const newItem = currentItem;
 
-    // if (newItem.text !== "") {
-    const newItems = [...items, newItem];
+    if (newItem.text !== "") {
+      const newItems = [...items, newItem];
 
-    setItems(newItems);
+      setItems(newItems);
 
-    setCurrentItem({
-      text: "",
-      key: "",
-    });
-    // }
+      setCurrentItem({
+        text: "",
+        key: "",
+      });
+    }
   }
 
   function handleInput(inputEvent) {
@@ -67,12 +67,14 @@ const TodoComponent = () => {
     <div className="TodoContainer">
       <header>
         <form id="to-do-form" onSubmit={addItem}>
-          <input
-            type="text"
+          <textarea
+            type="textarea"
             placeholder="Tarefa"
             value={currentItem.text}
             onChange={handleInput}
-          ></input>
+            rows={5}
+            cols={3}
+          />
           <button type="submit">+</button>
         </form>
       </header>

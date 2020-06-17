@@ -1,0 +1,51 @@
+.DropContainer {
+  border-radius: 10px;
+  border: 3px dashed slategray;
+  background-color: rgba(172, 175, 179);
+  display: flex;
+  align-self: center;
+  height: 100px;
+  width: 100px;
+}
+.DropContainer:hover {
+  background-color: rgb(192, 196, 201);
+  cursor: pointer;
+}
+.DropContainer text {
+  position: relative;
+  left: 23px;
+  top: 15px;
+  font-size: 22px;
+}
+
+.Icon {
+  position: relative;
+  align-self: center;
+  left: 32px;
+}
+
+.DropzoneImageContainer {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.DropzoneImageContainer button {
+  align-self: center;
+  padding: 10px;
+  width: 100px;
+  margin-top: 5px;
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+}
+.DropzoneImageContainer button:hover{
+  background-color: rgba(255, 255, 255, 0.767);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .DropContainer {
+    margin-top: 15px;
+  }
+}
