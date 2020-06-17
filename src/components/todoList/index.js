@@ -7,7 +7,7 @@ import Dropzone from '../dropzone/index';
 import { FaFileImage, FaRegFileImage, FaFileUpload } from 'react-icons/fa'
 
 
-function ListItems(props) {
+const ListItems = (props) => {
   const items = props.items;
 
   const [value, setValue] = useState("");

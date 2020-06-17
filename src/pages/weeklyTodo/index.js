@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { useReactToPrint } from 'react-to-print'
+import { useReactToPrint } from "react-to-print";
 
 import "./styles.css";
 import { TodoDaily } from "../todoDaily/";
@@ -11,7 +11,7 @@ const WeeklyTodo = () => {
 
   const handlePrint = useReactToPrint({
     content: () => printableRef.current,
-  })
+  });
 
   useEffect(() => {
     const verifyWidth = () => {
@@ -26,16 +26,18 @@ const WeeklyTodo = () => {
   });
 
   return (
-    <div className="container" ref={printableRef}>
+    <>
     <button className="PrintButton" onClick={handlePrint}>Imprimir</button>
-      <TodoDaily day="Segunda" />
-      <TodoDaily day="Terça" />
-      <TodoDaily day="Quarta" />
-      <TodoDaily day="Quinta" />
-      <TodoDaily day="Sexta" />
-      <TodoDaily day="Sábado" />
-      <TodoDaily day="Domingo"/>
-    </div>
+      <div className="container" ref={printableRef}>
+        <TodoDaily day="Segunda" />
+        <TodoDaily day="Terça" />
+        <TodoDaily day="Quarta" />
+        <TodoDaily day="Quinta" />
+        <TodoDaily day="Sexta" />
+        <TodoDaily day="Sábado" />
+        <TodoDaily day="Domingo" />
+      </div>
+    </>
   );
 };
 
