@@ -23,7 +23,6 @@
   position: fixed;
   margin: 20px;
   padding: 10px;
-  top: 20px;
   left: 5px;
   font-size: 20px;
   background-color: rgb(58, 58, 58);
@@ -36,7 +35,18 @@
   .PrintButton {
     position: fixed;
     margin: 20px;
+    top: 20px;
     padding: 2.5px;
+    left: -20px;
+  }
+  .App h2 {
+    margin-left: 20px;
+  }
+  .App img {
+    width: 64px;
+    height: auto;
+    align-self: center;
+    right: 5px;
   }
 }
 
