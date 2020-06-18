@@ -52,11 +52,11 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .DropContainerAvatar {
     height: 40px;
     width: 40px;
-    margin-left: 20px;
+    margin-left: 45px;
   }
 
   .IconAvatar {

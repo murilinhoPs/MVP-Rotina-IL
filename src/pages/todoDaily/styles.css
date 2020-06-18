@@ -8,10 +8,9 @@
 
 .DayContainer {
   padding: 10px;
-
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .DayContainer {
     background-color: rgb(210, 210, 210);
 

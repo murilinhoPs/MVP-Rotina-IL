@@ -6,7 +6,7 @@ const App = () => {
 
   return (
     <>
-      <button className="PrintButton" onClick={() => window.print()}>
+      <button className="PrintButton" onClick={() => window.print({})}>
         Imprimir
       </button>
         <WeeklyTodo />

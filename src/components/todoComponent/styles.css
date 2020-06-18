@@ -1,4 +1,4 @@
-@media print {
+@media only print {
   #to-do-form textarea{
     color: transparent;
     background-color: transparent;
@@ -6,11 +6,16 @@
     width: 150px;
     height: 50px;
     padding: 5px 20px;
+    outline: none;
+    resize:none;   
   }
   #to-do-form button{
     display: none;
     background-color: transparent;
     color: transparent;
+  }
+  #to-do-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.0);
   }
 }
 
@@ -59,7 +64,7 @@
     outline: none;
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     #to-do-form textarea {
       width: 200px;
       height: 40px;

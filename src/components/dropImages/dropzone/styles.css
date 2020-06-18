@@ -46,7 +46,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .DropContainer {
     margin-top: 15px;
   }

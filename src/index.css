@@ -1,5 +1,12 @@
-@page {
-  margin: 0;
+@media print {
+  @page {
+    margin: 10px;
+    size: A4;
+  }
+  body {
+    -webkit-transform: scale(0.5, 0.5);
+    -webkit-transform-origin: 0 0;
+  }
 }
 
 body {

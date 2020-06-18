@@ -20,15 +20,15 @@ const WeeklyTodo = () => {
 
   return (
     <span>
-      <div className="container">
-        <TodoDaily day="Segunda" />
-        <TodoDaily day="Terça" />
-        <TodoDaily day="Quarta" />
-        <TodoDaily day="Quinta" />
-        <TodoDaily day="Sexta" />
-        <TodoDaily day="Sábado" />
-        <TodoDaily day="Domingo" />
-      </div>
+    <div className="container">
+      <TodoDaily day="Segunda" />
+      <TodoDaily day="Terça" />
+      <TodoDaily day="Quarta" />
+      <TodoDaily day="Quinta" />
+      <TodoDaily day="Sexta" />
+      <TodoDaily day="Sábado" />
+      <TodoDaily day="Domingo" />
+    </div>
     </span>
   );
 };
