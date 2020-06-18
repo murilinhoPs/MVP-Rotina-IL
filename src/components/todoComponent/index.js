@@ -67,13 +67,11 @@ const TodoComponent = () => {
     <div className="TodoContainer">
       <header>
         <form id="to-do-form" onSubmit={addItem}>
-          <textarea
-            type="textarea"
+          <input
+            type="text"
             placeholder="Tarefa"
             value={currentItem.text}
             onChange={handleInput}
-            rows={5}
-            cols={3}
           />
           <button type="submit">+</button>
         </form>

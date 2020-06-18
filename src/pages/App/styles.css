@@ -1,24 +1,47 @@
+.App {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
-.PrintButton{
+.App img {
+  width: 124px;
+  height: auto;
+  position: absolute;
+  right: 15px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.App h2 {
+  color: rgb(58, 58, 58);
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.PrintButton {
   position: fixed;
   margin: 20px;
-  padding:10px;
-  top: 10px;
+  padding: 10px;
+  top: 20px;
+  left: 5px;
   font-size: 20px;
   background-color: rgb(58, 58, 58);
   color: white;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 @media only screen and (max-width: 768px) {
-  .PrintButton{
+  .PrintButton {
     position: fixed;
     margin: 20px;
     padding: 2.5px;
   }
 }
 
-@media print{
-  .PrintButton{
+@media print {
+  .PrintButton {
     display: none;
   }
 }

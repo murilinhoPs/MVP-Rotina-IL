@@ -1,5 +1,5 @@
 @media only print {
-  #to-do-form textarea{
+  #to-do-form input{
     color: transparent;
     background-color: transparent;
     border: none;
@@ -14,7 +14,7 @@
     background-color: transparent;
     color: transparent;
   }
-  #to-do-form textarea::placeholder {
+  #to-do-form input::placeholder {
     color: rgba(255, 255, 255, 0.0);
   }
 }
@@ -27,7 +27,7 @@
     align-content: center;
   }
 
-  #to-do-form textarea {
+  #to-do-form input {
     background-color: rgb(70, 80, 83);
     border: none;
     color: #fff;
@@ -43,7 +43,7 @@
     resize: none;
     outline: none;
   }
-  #to-do-form textarea::placeholder {
+  #to-do-form input::placeholder {
     color: rgba(255, 255, 255, 0.5);
   }
 
@@ -65,7 +65,7 @@
   }
 
   @media only screen and (max-width: 768px) {
-    #to-do-form textarea {
+    #to-do-form input {
       width: 200px;
       height: 40px;
     }

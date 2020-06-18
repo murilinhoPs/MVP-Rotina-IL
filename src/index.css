@@ -1,11 +1,11 @@
 @media print {
   @page {
-    margin: 10px;
+    margin: 0px;
     size: A4;
   }
   body {
     -webkit-transform: scale(0.5, 0.5);
-    -webkit-transform-origin: 0 0;
+    transform-origin: left top;
   }
 }
 
@@ -21,10 +21,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-@media (max-width: 768px) {
-  body {
-    background-color: dimgrey;
-  }
 }
