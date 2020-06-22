@@ -7,8 +7,6 @@ const Dropzone = ({ iconSize }) => {
   useEffect(() => {
     const verifyWidth = () => {
       setIsMobile(window.outerWidth <= 768);
-
-      console.log(isMobile);
     };
 
     window.addEventListener("resize", verifyWidth);

@@ -22,12 +22,15 @@ const ListItems = (props) => {
               <textarea
                 type="text"
                 id={item.key}
-                value={item.text}
+                defaultValue={item.text}
                 multiple={true}
                 onChange={(inputEvent) => {
+
                   props.setUpdate(inputEvent.target.value, item.key);
+
                   setValue(inputEvent.target.value);
-                  console.log(inputEvent.target.value);
+
+                  console.log(item.text);
                 }}
                 rows={3}
               />
@@ -47,6 +50,8 @@ const ListItems = (props) => {
       </div>
     );
   });
+
+
   return (
     <div>
       <FlipMove duration={300} easing="ease-in-out">
